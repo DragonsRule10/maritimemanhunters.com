@@ -1,5 +1,5 @@
 # What is this?
-* This is the backend of the Maritime Manhunters website, view all code here. :)
+* This is the frontend of the Maritime Manhunters website, view all code here. :)
 
 # Ohhh sys admin!!
 * Email our system admin at "me@tristinkorbel.xyz".
