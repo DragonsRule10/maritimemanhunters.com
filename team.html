@@ -2,40 +2,37 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1200">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200"> <!-- Force desktop layout -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <title>Maritime Manhunters | FTC 26055 | Home</title>
-  <meta property="og:title" content="Maritime Manhunters FTC Robotics Team" />
-  <meta property="og:description" content="Navigating challenges, engineering triumphs. Follow our robotics journey across the seven seas of innovation!" />
-  <meta property="og:image" content="https://example.com/images/team-logo.jpg" />
-  <meta property="og:url" content="https://maritimemanhunters.com" />
-  <meta property="og:type" content="website" />
+  <title>Space Dynamic - IT Solutions</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS (still used for styling, but grid is desktop only) -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Additional CSS Files -->
+  <!-- Additional CSS -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
 
   <style>
-    /* Force desktop layout on all devices */
+    /* Force desktop look everywhere */
     body {
       min-width: 1200px;
-      overflow-x: auto;
     }
+
+    /* Prevent Bootstrap from stacking things on smaller screens */
     @media (max-width: 1200px) {
-      .container, .row, [class*="col-"] {
+      .container,
+      .row,
+      [class*="col-"] {
         width: auto !important;
         float: none !important;
+        display: inline-block !important;
+        vertical-align: top !important;
       }
     }
   </style>
@@ -43,43 +40,47 @@
 
 <body>
 
-  <!-- ***** Header Area Start ***** -->
+  <!-- Preloader -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-lg-12">
           <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
+            <!-- Logo -->
             <a href="index.html" class="logo">
-              <h4>Maritime Manhunters</h4>
+              <h4>Space Dynamic<em>.</em></h4>
             </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
+            <!-- Menu -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="/index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="/index.html#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="/index.html#services">Services</a></li>
-              <li class="scroll-to-section"><a href="/index.html#portfolio">Team</a></li>
-              <li class="scroll-to-section"><a href="https://amikids.org/location/amikids-maritime-academy/">Our School</a></li>
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About Us</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
               <li class="scroll-to-section">
                 <div class="main-red-button"><a href="#contact">Contact Now</a></div>
               </li>
             </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
+            <a class="menu-trigger"><span>Menu</span></a>
           </nav>
         </div>
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
-  <!-- ***** Main Banner Area Removed (commented out) ***** -->
-
-  <!-- ***** Portfolio Section ***** -->
+  <!-- Portfolio Section Example -->
   <div id="portfolio" class="our-portfolio section">
     <div class="container">
       <div class="row">
@@ -90,76 +91,22 @@
         </div>
       </div>
       <div class="row">
-        <!-- Removed col-sm-6 classes to prevent responsiveness -->
+        <!-- Example item -->
         <div class="col-lg-3">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>Team Captains</h4>
-                <p>The duo who lead the team.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
+          <div class="portfolio-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="thumb">
+              <img src="assets/images/portfolio-01.jpg" alt="Team Member">
             </div>
-          </a>
-        </div>
-        <div class="col-lg-3">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Media Team</h4>
-                <p>The perfect picture takers.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
+            <div class="down-content">
+              <h4>John Doe</h4>
+              <span>Developer</span>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="col-lg-3">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Engineer Team</h4>
-                <p>The builder and programmers who innovate the robot, and the website!</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Management/Finance</h4>
-                <p>The ones who keep us in check, includes coaches.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
+        <!-- Repeat more items here -->
       </div>
     </div>
   </div>
-
-  <!-- (Rest of your Captain, Vice-Captain, Programming Team, Media Team, Build Team, Contact, and Footer sections remain unchanged) -->
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>Copyright &copy; 2024 Maritime Manhunters. All rights reserved.
-            <br>System Admin: <a rel="nofollow" href="mailto:me@tristinkorbel.xyz">Email</a></p>
-          <p><br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -167,7 +114,7 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/templatemo-custom.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 </html>
