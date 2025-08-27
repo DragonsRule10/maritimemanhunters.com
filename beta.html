@@ -32,11 +32,18 @@
       min-width: 1200px;
       overflow-x: auto;
     }
-    /* Remove Bootstrap's small breakpoint overrides */
+
+    /* Neutralize Bootstrap’s responsive collapsing */
     @media (max-width: 1200px) {
-      .container, .row, [class*="col-"] {
-        width: auto !important;
-        float: none !important;
+      .container {
+        max-width: 1200px !important;
+      }
+      .row {
+        flex-wrap: nowrap !important;
+      }
+      [class*="col-"] {
+        flex: 1 !important;
+        max-width: 100% !important;
       }
     }
   </style>
@@ -71,7 +78,7 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <!-- ***** Team Section Example (repeat unchanged structure) ***** -->
+  <!-- ***** Team Section ***** -->
   <div id="portfolio" class="our-portfolio section">
     <div class="container">
       <div class="row">
@@ -82,8 +89,8 @@
         </div>
       </div>
       <div class="row">
-        <!-- Removed col-sm-6 for fixed desktop layout -->
-        <div class="col-lg-3">
+        <!-- Keep col-lg-3 col-sm-6 so the grid works -->
+        <div class="col-lg-3 col-sm-6">
           <a href="#captain">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
@@ -96,7 +103,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <a href="#media">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="hidden-content">
@@ -109,7 +116,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <a href="#programming">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="hidden-content">
@@ -122,7 +129,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <a href="#management">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
               <div class="hidden-content">
@@ -139,8 +146,7 @@
     </div>
   </div>
 
-  <!-- (Rest of your sections remain the same, just replace `col-lg-? col-sm-?` with only `col-lg-?`) -->
-
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
