@@ -3,7 +3,7 @@
   <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=1200">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,6 +34,28 @@ https://templatemo.com/tm-562-space-dynamic
   </head>
 
 <body>
+  <style>
+  /* Force desktop layout everywhere */
+  body {
+    min-width: 1200px;
+    overflow-x: auto;
+  }
+
+  /* Neutralize Bootstrap’s breakpoints */
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 1200px !important;
+    }
+    .row {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+    }
+    [class*="col-"] {
+      flex: 1 !important;
+      max-width: 100% !important;
+    }
+  }
+</style>
 
   <!-- ***** Preloader Start ***** 
   <div id="js-preloader" class="js-preloader">
@@ -61,12 +83,11 @@ https://templatemo.com/tm-562-space-dynamic
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="/index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="/index.html#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="/index.html#services">Services</a></li>
-              <li class="scroll-to-section"><a href="/index.html#portfolio">Team</a></li>
-              <li class="scroll-to-section"><a href="https://amikids.org/location/amikids-maritime-academy/">Our School</a></li> 
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
+              <li class="scroll-to-section"><a href="/index.html#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="/index.html#about">Our Values</a></li>
+              <li class="scroll-to-section"><a href="/index.html#services">About Us</a></li>
+              <li class="scroll-to-section"><a href="/team.html">Team</a></li>
+              <li class="scroll-to-section"><a href="https://amikids.org/location/amikids-maritime-academy/">Our School</a></li>
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
