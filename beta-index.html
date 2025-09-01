@@ -4,8 +4,8 @@
 <head>
 
   <meta charset="UTF-8">
-  <!-- Force desktop view on all devices -->
-  <meta name="viewport" content="width=1200">
+  <!-- Force desktop view but shrink to fit on mobile -->
+  <meta name="viewport" content="width=1200, initial-scale=0.3, maximum-scale=1.0, user-scalable=yes">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,24 +32,9 @@
 <body>
 
 <style>
-  /* Force desktop layout everywhere */
+  /* Remove forced min-width to allow shrinking */
   body {
-    min-width: 1200px;
-    overflow-x: auto;
-  }
-  /* Prevent Bootstrap from stacking on small screens */
-  @media (max-width: 1200px) {
-    .container {
-      max-width: 1200px !important;
-    }
-    .row {
-      display: flex !important;
-      flex-wrap: nowrap !important;
-    }
-    [class*="col-"] {
-      flex: 1 !important;
-      max-width: 100% !important;
-    }
+    overflow-x: hidden;
   }
 </style>
 
