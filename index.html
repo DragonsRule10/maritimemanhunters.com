@@ -35,6 +35,29 @@ https://templatemo.com/tm-562-space-dynamic
 
 <body>
 
+
+  <style>
+  /* Force desktop layout everywhere */
+  body {
+    min-width: 1200px;
+    overflow-x: auto;
+  }
+
+  /* Neutralize Bootstrap’s breakpoints */
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 1200px !important;
+    }
+    .row {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+    }
+    [class*="col-"] {
+      flex: 1 !important;
+      max-width: 100% !important;
+    }
+  }
+</style>
   <!-- ***** Preloader Start ***** 
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
